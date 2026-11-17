@@ -1,0 +1,250 @@
+/* ==================================================
+   CALENDAR
+================================================== */
+.day-calendar {
+  margin-top: 56px;
+}
+.invitation-calendar .react-calendar {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 15px 22px;
+  border: 1px solid var(--line-color);
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 18px 14px 33px rgba(102, 116, 95, 0.1);
+}
+.invitation-calendar .react-calendar__navigation {
+  height: 38px;
+  margin-bottom: 12px;
+}
+
+.invitation-calendar .react-calendar__navigation button {
+  color: var(--point-color);
+  font-family: serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.invitation-calendar .react-calendar__navigation__arrow {
+  display: none;
+}
+.invitation-calendar .react-calendar__month-view__weekdays {
+  margin-bottom: 5px;
+}
+
+.invitation-calendar .react-calendar__month-view__weekdays__weekday {
+  padding: 8px 0;
+  color: #9aa58c;
+  font-family: serif;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.invitation-calendar
+  .react-calendar__month-view__weekdays__weekday:first-child {
+  color: #b1b78d;
+}
+
+.invitation-calendar .react-calendar__month-view__weekdays__weekday:last-child {
+  color: #87937d;
+}
+.invitation-calendar .react-calendar__tile {
+  position: relative;
+  height: 46px;
+  padding: 0;
+  border-radius: 0;
+  color: var(--point-color);
+  font-family: serif;
+  font-size: 12px;
+  font-weight: 400;
+  background: transparent;
+}
+
+.invitation-calendar .react-calendar__tile:enabled:hover {
+  border-radius: 50%;
+  background: transparent;
+}
+.invitation-calendar .react-calendar__tile--now {
+  background: transparent;
+  color: var(--point-color);
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background: transparent;
+}
+.invitation-calendar .react-calendar__tile--active {
+  background: transparent;
+  color: var(--point-color);
+}
+.invitation-heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background: var(--point-color);
+  z-index: 2;
+}
+
+.invitation-heart::before,
+.invitation-heart::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--point-color);
+}
+
+.invitation-heart::before {
+  top: -11px;
+  left: 0;
+}
+
+.invitation-heart::after {
+  top: 0;
+  left: 11px;
+}
+
+.invitation-heart span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%) rotate(45deg);
+  color: #fffdf5;
+  font-family: serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* ==================================================
+   TIMER
+================================================== */
+.day-countdown {
+  margin-top: 48px;
+  color: var(--point-color);
+}
+.day-countdown .day-countdown-label {
+  padding-bottom: 27px;
+  text-align: center;
+  font-size: 14px;
+}
+.dday-box {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 20px 0 10px;
+
+  border-top: 1px solid var(--line-color);
+  border-bottom: 1px solid var(--line-color);
+}
+
+.time-unit {
+  position: relative;
+  text-align: center;
+}
+
+.time-unit:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 28px;
+  transform: translateY(-50%);
+  background: #e8e9de;
+}
+
+.time-unit span {
+  display: block;
+  font-size: 88px;
+  font-weight: 400;
+  line-height: 1;
+}
+.time-unit p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+.dday-text {
+  margin: 27px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.dday-text b {
+  color: var(--color-sub-color);
+  font-weight: 700;
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+  .day-date__main {
+    gap: 9px;
+  }
+
+  .day-date__month {
+    font-size: 13px;
+  }
+
+  .day-date__main strong {
+    font-size: 52px;
+  }
+
+  .day-date__weekday {
+    font-size: 13px;
+  }
+
+  .day-date__time {
+    margin-top: 17px;
+    letter-spacing: 3px;
+  }
+
+  .day-calendar {
+    margin-top: 42px;
+  }
+
+  .invitation-calendar .react-calendar {
+    padding: 18px 10px 20px;
+  }
+
+  .invitation-calendar .react-calendar__tile {
+    height: 43px;
+    font-size: 11px;
+  }
+
+  .invitation-heart {
+    width: 22px;
+    height: 22px;
+  }
+
+  .day-countdown {
+    margin-top: 48px;
+  }
+
+  .time-unit span {
+    font-size: 32px;
+  }
+
+  .time-unit p {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .dday-text {
+    font-size: 12px;
+  }
+}
