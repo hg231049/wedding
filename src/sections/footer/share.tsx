@@ -3,7 +3,7 @@ import { useState } from "react";
 const KAKAO_JAVASCRIPT_KEY = "a8c4c11e39587dfb19e4622aa34558b4";
 
 // 실제 배포된 청첩장 주소
-const WEDDING_URL = "https://invitation-seven-alpha.vercel.app/";
+const WEDDING_URL = "https://hgg-les-wedding.vercel.app/";
 
 export default function Share() {
   const [copied, setCopied] = useState(false);
