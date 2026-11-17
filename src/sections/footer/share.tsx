@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const KAKAO_JAVASCRIPT_KEY = "a8c4c11e39587dfb19e4622aa34558b4";
 

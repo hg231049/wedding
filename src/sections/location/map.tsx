@@ -1,12 +1,6 @@
 import { useEffect, useRef } from "react";
 import "../../css/map.css";
-import {
-  TrainFront,
-  BusFront,
-  CarFront,
-  MapPin,
-  Navigation,
-} from "lucide-react";
+import { TrainFront, BusFront, CarFront, Navigation } from "lucide-react";
 
 export default function Map() {
   const mapRef = useRef<HTMLDivElement>(null);
