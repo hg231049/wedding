@@ -86,7 +86,7 @@ export default function Map() {
         </div>
       </div>
       {/* BUS */}
-      <div className="transport-info transport-parking">
+      <div className="transport-info transport-bus">
         <div className="transport-content">
           <span className="transport-icon">
             <BusFront size={24} strokeWidth={1.5} />

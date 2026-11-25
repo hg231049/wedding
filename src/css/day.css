@@ -172,7 +172,7 @@
 .time-unit p {
   margin: 0;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .dday-text {
   margin: 27px 0 0;
@@ -236,11 +236,11 @@
   }
 
   .time-unit span {
-    font-size: 32px;
+    font-size: 26px;
   }
 
   .time-unit p {
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 1.5px;
   }
 
